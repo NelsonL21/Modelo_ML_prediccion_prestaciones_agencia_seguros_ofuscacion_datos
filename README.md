@@ -37,7 +37,7 @@ Instrucciones:
 - Luego se construye un modelo dummy que, en este caso, es simplemente un modelo aleatorio. Debería devolver "1" con cierta probabilidad. Probemos el modelo con cuatro valores de probabilidad: 0, la probabilidad de pagar cualquier prestación del seguro, 0.5, 1.
 La probabilidad de pagar cualquier prestación del seguro puede definirse como:
 
-![Image](https://github.com/NelsonL21/Modelo_ML_prediccion_prestaciones_agencia_seguros_ofuscacion_datos/blob/main/image.png)
+![Image](https://github.com/NelsonL21/Modelo_ML_prediccion_prestaciones_agencia_seguros_ofuscacion_datos/blob/main/Prestaciones%20del%20seguro.png)
 
 
 Como se puede observar, la calidad el modelo es baja, con un F1 entono al 12% y 20% lo cual no nos brinda demasiada información y no es lo suficientemente preciso. Se puede decir que en este caso el modelo predictivo no funciona mejor que el Dummy, será mejor optar por la regresión lineal para aumentar el valor de F1.
@@ -59,6 +59,7 @@ Los valores predichos con  𝑤𝑃
   no son mas que los mismos valores que se pueden predecir con  𝑤
   solo que el peso ahora se ajusta por medio de una ofuscación, es decir se encripta, por tanto la regresión lineal ahora orrojará los valores escalados en P. Sin embar no debería de afecatr las métricas ya que es el equivalente a decir [1,2,3,4,5] * 5 = [5,10,15,20,25] Son los mismos números incrementados en 5, al divdir entre este, obtenemos los valores originales.
 
+![Image2](https://github.com/NelsonL21/Modelo_ML_prediccion_prestaciones_agencia_seguros_ofuscacion_datos/blob/main/Deducci%C3%B3n%20matem%C3%A1tica.png)
 
 Como se pudo evidenciar, Se logró con exito generar un código que permitiese encontrar n cantidad de clientes similares, pudiendo incluso determinar la distancia Euclidea o de Manhathan que habia entre cada uno de los prospectos.
 
